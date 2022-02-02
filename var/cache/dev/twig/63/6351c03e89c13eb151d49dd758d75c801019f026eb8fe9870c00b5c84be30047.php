@@ -88,11 +88,11 @@ class __TwigTemplate_7ced4615c32a932feced8322e4b551ff7a2ad83bb98c9208bb7da945a31
 
         // line 6
         echo "<style>
-    .example-wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
+    .wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class=\"example-wrapper\">
+<div class=\"wrapper\">
     <h1 class=\"text-center\">Mon compte</h1>
     <p class=\"text-center\">Bienvenue ";
         // line 13
@@ -199,8 +199,6 @@ class __TwigTemplate_7ced4615c32a932feced8322e4b551ff7a2ad83bb98c9208bb7da945a31
         echo "        </div>
     </div>
 </div>
-        
-    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -233,11 +231,11 @@ class __TwigTemplate_7ced4615c32a932feced8322e4b551ff7a2ad83bb98c9208bb7da945a31
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
+    .wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class=\"example-wrapper\">
+<div class=\"wrapper\">
     <h1 class=\"text-center\">Mon compte</h1>
     <p class=\"text-center\">Bienvenue {{app.user.firstname}}</p>
 
@@ -288,8 +286,6 @@ class __TwigTemplate_7ced4615c32a932feced8322e4b551ff7a2ad83bb98c9208bb7da945a31
         </div>
     </div>
 </div>
-        
-    
 {% endblock %}
 ", "account/index.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\account\\index.html.twig");
     }

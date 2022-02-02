@@ -40,7 +40,7 @@ class __TwigTemplate_dcc815da209b35611def6c0678aafe9a1074dac00d28c9f871a9f645cbf
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "components/_nav.html.twig"));
 
         // line 1
-        echo "<nav class=\"navbar navbar-expand-sm navbar-light bg-dark mb-4\"  aria-label=\"Third navbar example\">
+        echo "<nav class=\"navbar navbar-expand-xl navbar-light bg-dark mb-4\"  aria-label=\"Third navbar example\">
 \t<div class=\"container-fluid\">
 \t\t<a class=\"navbar-brand\" href=\"";
         // line 3
@@ -56,7 +56,7 @@ class __TwigTemplate_dcc815da209b35611def6c0678aafe9a1074dac00d28c9f871a9f645cbf
 \t\t\t\t
 \t\t\t\t";
         // line 12
-        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
             // line 13
             echo "\t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t<a class=\"nav-link\" aria-current=\"page\" href=\"";
@@ -135,7 +135,7 @@ class __TwigTemplate_dcc815da209b35611def6c0678aafe9a1074dac00d28c9f871a9f645cbf
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-sm navbar-light bg-dark mb-4\"  aria-label=\"Third navbar example\">
+        return new Source("<nav class=\"navbar navbar-expand-xl navbar-light bg-dark mb-4\"  aria-label=\"Third navbar example\">
 \t<div class=\"container-fluid\">
 \t\t<a class=\"navbar-brand\" href=\"{{ path('home') }}\">PostYours</a>
 \t\t<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample03\" aria-controls=\"navbarsExample03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -146,7 +146,7 @@ class __TwigTemplate_dcc815da209b35611def6c0678aafe9a1074dac00d28c9f871a9f645cbf
 
 \t\t\t<ul class=\"navbar-nav ml-auto\">
 \t\t\t\t
-\t\t\t\t{% if is_granted('ROLE_USER') %}
+\t\t\t\t{% if is_granted('ROLE_ADMIN') %}
 \t\t\t\t<li class=\"nav-item\">
 \t\t\t\t\t<a class=\"nav-link\" aria-current=\"page\" href=\"{{path('admin')}}\">Admin</a>
 \t\t\t\t</li>

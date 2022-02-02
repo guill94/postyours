@@ -85,68 +85,65 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        echo "
 
-<div class=\"example-wrapper\">
+<div class=\"container\">
     <h1 class=\"text-center\">";
-        // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 12, $this->source); })()), "title", [], "any", false, false, false, 12), "html", null, true);
+        // line 9
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 9, $this->source); })()), "title", [], "any", false, false, false, 9), "html", null, true);
         echo "</h1>
 
     
-    <article>
-        <div class=\"\">
+    <div>
+        <div class=\"container\">
                             
             <img class=\"card-img-top\" width='50px' height='auto' src=\"/upload/images/";
-        // line 18
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 18, $this->source); })()), "imageName", [], "any", false, false, false, 18), "html", null, true);
+        // line 15
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 15, $this->source); })()), "imageName", [], "any", false, false, false, 15), "html", null, true);
         echo "\" alt=\"";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 18, $this->source); })()), "title", [], "any", false, false, false, 18), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 15, $this->source); })()), "title", [], "any", false, false, false, 15), "html", null, true);
         echo "\">
                           
                             
             <div class=\"mt-4\">
                     <p>";
-        // line 22
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 22, $this->source); })()), "description", [], "any", false, false, false, 22), "html", null, true);
+        // line 19
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 19, $this->source); })()), "description", [], "any", false, false, false, 19), "html", null, true);
         echo "</p>
                     <p><strong>Catégorie :</strong> ";
-        // line 23
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 23, $this->source); })()), "category", [], "any", false, false, false, 23), "name", [], "any", false, false, false, 23), "html", null, true);
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 20, $this->source); })()), "category", [], "any", false, false, false, 20), "name", [], "any", false, false, false, 20), "html", null, true);
         echo "</p>
                     <p>
                         <small>Postée ";
-        // line 25
-        echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 25, $this->source); })()), "createdAt", [], "any", false, false, false, 25));
+        // line 22
+        echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 22, $this->source); })()), "createdAt", [], "any", false, false, false, 22));
         echo "</small></br>
                         ";
-        // line 26
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26) == twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26))) {
-            // line 27
+        // line 23
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 23, $this->source); })()), "user", [], "any", false, false, false, 23) == twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 23, $this->source); })()), "user", [], "any", false, false, false, 23))) {
+            // line 24
             echo "                        <small>Par vous</small>
                         ";
         } else {
-            // line 29
+            // line 26
             echo "                        <small>Par ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 29, $this->source); })()), "user", [], "any", false, false, false, 29), "firstname", [], "any", false, false, false, 29), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "firstname", [], "any", false, false, false, 26), "html", null, true);
             echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 29, $this->source); })()), "user", [], "any", false, false, false, 29), "lastname", [], "any", false, false, false, 29), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "lastname", [], "any", false, false, false, 26), "html", null, true);
             echo "</small>
                         ";
         }
-        // line 31
+        // line 28
         echo "                        
                     </p>
 
                     ";
-        // line 34
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34) == twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34))) {
-            // line 35
+        // line 31
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 31, $this->source); })()), "user", [], "any", false, false, false, 31) == twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 31, $this->source); })()), "user", [], "any", false, false, false, 31))) {
+            // line 32
             echo "                    <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit_image", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 35, $this->source); })()), "id", [], "any", false, false, false, 35)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit_image", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 32, $this->source); })()), "id", [], "any", false, false, false, 32)]), "html", null, true);
             echo "\">Modifier</a><span> | </span>
                     <a href=\"#\" onclick=\"event.preventDefault(); 
                     confirm('Êtes-vous certain de supprimer cette image ?') && document.getElementById('image_delete').submit();\"
@@ -155,73 +152,73 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
                     </a>
 
                     <form id=\"image_delete\" action=\"";
-            // line 42
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_image", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 42, $this->source); })()), "id", [], "any", false, false, false, 42)]), "html", null, true);
+            // line 39
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_image", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 39, $this->source); })()), "id", [], "any", false, false, false, 39)]), "html", null, true);
             echo "\" method=\"post\">
                         <input type=\"hidden\" name=\"csrf_token\" value=\"";
-            // line 43
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("imageDelete"), "html", null, true);
             echo "\">
                         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
                     </form>
                     ";
         }
-        // line 47
+        // line 44
         echo "            </div>
         </div>
-    </article> 
+    </div> 
 
         ";
-        // line 51
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 51, $this->source); })()), "user", [], "any", false, false, false, 51)) {
-            // line 52
-            echo "            <article class=\"mt-5\">
+        // line 48
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 48, $this->source); })()), "user", [], "any", false, false, false, 48)) {
+            // line 49
+            echo "            <section class=\"mt-5\">
                 <div>
                     ";
-            // line 54
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 54, $this->source); })()), 'form');
+            // line 51
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 51, $this->source); })()), 'form');
             echo "
                 </div>    
-            </article> 
+            </section> 
         ";
         }
-        // line 58
+        // line 55
         echo "
     
-        <article>
+        <section class=\"mb-5\">
             ";
-        // line 61
-        if (((isset($context["showComments"]) || array_key_exists("showComments", $context) ? $context["showComments"] : (function () { throw new RuntimeError('Variable "showComments" does not exist.', 61, $this->source); })()) != null)) {
-            // line 62
+        // line 58
+        if (((isset($context["showComments"]) || array_key_exists("showComments", $context) ? $context["showComments"] : (function () { throw new RuntimeError('Variable "showComments" does not exist.', 58, $this->source); })()) != null)) {
+            // line 59
             echo "                <div class=\"comments-border\">
                     
                     ";
-            // line 64
+            // line 61
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["showComments"]) || array_key_exists("showComments", $context) ? $context["showComments"] : (function () { throw new RuntimeError('Variable "showComments" does not exist.', 64, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["showComments"]) || array_key_exists("showComments", $context) ? $context["showComments"] : (function () { throw new RuntimeError('Variable "showComments" does not exist.', 61, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["showComment"]) {
-                // line 65
+                // line 62
                 echo "                        
                         <div class='comment-border pl-2 mt-3'> 
                             <div class=\"comment-container\">
                                 <small class=\"\">";
-                // line 68
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 68), "firstname", [], "any", false, false, false, 68), "html", null, true);
+                // line 65
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 65), "firstname", [], "any", false, false, false, 65), "html", null, true);
                 echo " ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 68), "lastname", [], "any", false, false, false, 68), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 65), "lastname", [], "any", false, false, false, 65), "html", null, true);
                 echo " :</small><br/>
                                     <p> ";
-                // line 69
+                // line 66
                 echo twig_escape_filter($this->env, $context["showComment"], "html", null, true);
                 echo " </p>
                                 <small class=\"mt-2\">Postée ";
-                // line 70
-                echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, $context["showComment"], "createdAt", [], "any", false, false, false, 70));
+                // line 67
+                echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, $context["showComment"], "createdAt", [], "any", false, false, false, 67));
                 echo "</small>
                                 ";
-                // line 71
-                if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 71, $this->source); })()), "user", [], "any", false, false, false, 71) == twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 71))) {
-                    // line 72
+                // line 68
+                if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 68, $this->source); })()), "user", [], "any", false, false, false, 68) == twig_get_attribute($this->env, $this->source, $context["showComment"], "user", [], "any", false, false, false, 68))) {
+                    // line 69
                     echo "                                    <small class=\"ml-2\"><a href=\"#\" onclick=\"event.preventDefault(); 
                                     confirm('Êtes-vous certain de supprimer ce commentaire ?') && document.getElementById('image_delete').submit();\"
                                     >
@@ -229,18 +226,18 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
                                     </a></small>
 
                                     <form id=\"image_delete\" action=\"";
-                    // line 78
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_comment", ["id" => twig_get_attribute($this->env, $this->source, $context["showComment"], "id", [], "any", false, false, false, 78)]), "html", null, true);
+                    // line 75
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_comment", ["id" => twig_get_attribute($this->env, $this->source, $context["showComment"], "id", [], "any", false, false, false, 75)]), "html", null, true);
                     echo "\" method=\"post\">
                                         <input type=\"hidden\" name=\"csrf_token\" value=\"";
-                    // line 79
+                    // line 76
                     echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("commentDelete"), "html", null, true);
                     echo "\">
                                         <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
                                     </form>
                                 ";
                 }
-                // line 83
+                // line 80
                 echo "                            </div>
                         </div>
                     ";
@@ -248,20 +245,20 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['showComment'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 86
+            // line 83
             echo "                </div>
             ";
         } else {
-            // line 88
+            // line 85
             echo "                <p>Pas encore de commentaire";
-            if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 88, $this->source); })()), "user", [], "any", false, false, false, 88) != twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 88, $this->source); })()), "user", [], "any", false, false, false, 88))) {
+            if ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 85, $this->source); })()), "user", [], "any", false, false, false, 85) != twig_get_attribute($this->env, $this->source, (isset($context["image"]) || array_key_exists("image", $context) ? $context["image"] : (function () { throw new RuntimeError('Variable "image" does not exist.', 85, $this->source); })()), "user", [], "any", false, false, false, 85))) {
                 echo ", soyez le premier ou la première !";
             }
             echo "</p>
             ";
         }
-        // line 90
-        echo "        </article>  
+        // line 87
+        echo "        </section>  
     
     
 </div>
@@ -286,7 +283,7 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
 
     public function getDebugInfo()
     {
-        return array (  264 => 90,  256 => 88,  252 => 86,  244 => 83,  237 => 79,  233 => 78,  225 => 72,  223 => 71,  219 => 70,  215 => 69,  209 => 68,  204 => 65,  200 => 64,  196 => 62,  194 => 61,  189 => 58,  182 => 54,  178 => 52,  176 => 51,  170 => 47,  163 => 43,  159 => 42,  148 => 35,  146 => 34,  141 => 31,  133 => 29,  129 => 27,  127 => 26,  123 => 25,  118 => 23,  114 => 22,  105 => 18,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  261 => 87,  253 => 85,  249 => 83,  241 => 80,  234 => 76,  230 => 75,  222 => 69,  220 => 68,  216 => 67,  212 => 66,  206 => 65,  201 => 62,  197 => 61,  193 => 59,  191 => 58,  186 => 55,  179 => 51,  175 => 49,  173 => 48,  167 => 44,  160 => 40,  156 => 39,  145 => 32,  143 => 31,  138 => 28,  130 => 26,  126 => 24,  124 => 23,  120 => 22,  115 => 20,  111 => 19,  102 => 15,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -296,17 +293,14 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
 {% block title %}{{image.title}}{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class=\"example-wrapper\">
+
+<div class=\"container\">
     <h1 class=\"text-center\">{{image.title}}</h1>
 
     
-    <article>
-        <div class=\"\">
+    <div>
+        <div class=\"container\">
                             
             <img class=\"card-img-top\" width='50px' height='auto' src=\"/upload/images/{{image.imageName}}\" alt=\"{{image.title}}\">
                           
@@ -339,18 +333,18 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
                     {% endif %}
             </div>
         </div>
-    </article> 
+    </div> 
 
         {% if app.user %}
-            <article class=\"mt-5\">
+            <section class=\"mt-5\">
                 <div>
                     {{form(formulaire)}}
                 </div>    
-            </article> 
+            </section> 
         {% endif %}
 
     
-        <article>
+        <section class=\"mb-5\">
             {% if showComments != null %}
                 <div class=\"comments-border\">
                     
@@ -380,7 +374,7 @@ class __TwigTemplate_eaacf2592dade754e67bb1c65efe2bfe6b81851443a08708ab8a7d99e8a
             {% else %}
                 <p>Pas encore de commentaire{% if app.user != image.user %}, soyez le premier ou la première !{% endif %}</p>
             {% endif %}
-        </article>  
+        </section>  
     
     
 </div>

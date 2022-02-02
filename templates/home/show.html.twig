@@ -5,12 +5,12 @@
 {% block body %}
 
 
-<div class="example-wrapper">
+<div class="container">
     <h1 class="text-center">{{image.title}}</h1>
 
     
     <div>
-        <div class="">
+        <div class="container">
                             
             <img class="card-img-top" width='50px' height='auto' src="/upload/images/{{image.imageName}}" alt="{{image.title}}">
                           
@@ -54,7 +54,7 @@
         {% endif %}
 
     
-        <section>
+        <section class="mb-5">
             {% if showComments != null %}
                 <div class="comments-border">
                     

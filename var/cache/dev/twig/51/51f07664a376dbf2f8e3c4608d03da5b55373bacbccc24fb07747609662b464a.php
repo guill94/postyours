@@ -86,11 +86,11 @@ class __TwigTemplate_d700331091956a2939af3b528f69c1ddbd18209ab376debfe4ad557b800
 
         // line 6
         echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class=\"example-wrapper\">
+<div class=\"wrapper\">
     <h1>Modifier mon mot de passe</h1>
 
     ";
@@ -134,11 +134,11 @@ class __TwigTemplate_d700331091956a2939af3b528f69c1ddbd18209ab376debfe4ad557b800
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class=\"example-wrapper\">
+<div class=\"wrapper\">
     <h1>Modifier mon mot de passe</h1>
 
     {{ form(formulaire) }}

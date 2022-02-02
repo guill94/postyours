@@ -33,7 +33,7 @@ class ChangePasswordType extends AbstractType
             'label' => 'Mot de passe actuel',
             'mapped' => false,
             'attr' => [
-                'paceholder' => 'Veuillez saisir votre mot de passe actuel'
+                'placeholder' => 'Veuillez saisir votre mot de passe actuel'
             ]
         ])
         ->add('new_password', RepeatedType::class, [

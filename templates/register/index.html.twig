@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <div class="custom-container">
+        <h1 class='text-center'>Inscription</h1>
+        {{ form (formulaire) }}
+    </div>
+    <a href="{{ url('confirm_account', {"token": token}) }}">ici</a>
+{% endblock %}

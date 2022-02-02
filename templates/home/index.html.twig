@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1 class="text-center mb-5">Accueil</h1>
+
+    <div class="row">
+        <div class="col-xl-2">
+            <h3>Filtrer</h3>
+            {{form(formulaire)}}
+        </div>
+        <div class="col-xl-9">
+            <div class="row">
+                {% for image in images %}
+                    <div class="col-md-3 mt-2">
+                    
+                            <div class="card mr-1" style="width:;">
+                                <a href="{{ path('home_image_show', {id: image.id}) }}">
+                                    <img class="card-img-top" width='200px' height='180px' src="/upload/images/{{image.imageName}}" alt="{{image.title}}">
+                                </a>
+                                
+                                <div class="card-body">
+                                    <h4><a href="{{ path('home_image_show', {id: image.id}) }}">{{image.title}}</a></h4>
+                                        <p>{{image.description | u.truncate(25, '...')}}</p>
+                                        <p><strong>Catégorie :</strong> {{image.category.name}}</p>
+                                        <p>
+                                        <small>Postée {{image.updatedAt | ago}}</small></br>
+                                        
+                                        {% if app.user == image.user %}
+                                        <small>Par vous</small>
+                                        {% else %}
+                                        <small>Par {{ image.user.firstname }} {{ image.user.lastname }}</small>
+                                        {% endif %}
+                                </div>
+                            </div>
+            
+                    </div>
+                {% endfor %}
+            </div>
+            
+            <div class="mt-5">
+                {% if pagination == true %}
+                    <ul class="pagination">
+                        <li class="page-item {{ (page == 1) ? 'disabled' : ''}}">
+                            <a class="page-link" href="{{ (page > 1) ? '?page=' ~ (page - 1) : '' }}">Précédent</a>
+                        </li>
+                        {% for item in 1..((total / limit) | round (0, 'ceil')) %}
+                            
+                            <li class="page-item {{ (page == item) ? 'active' : ''}} ">
+                                <a class="page-link" href="?page={{item}}">{{item}}</a>
+                            </li>
+                            
+                        {% endfor %}
+                        <li class="page-item {{ (page == ((total / limit) | round (0, 'ceil'))) ? 'disabled' : ''}}">
+                                <a class="page-link" href="{{ ( page  == ((total / limit) | round (0, 'ceil')) ) ? '' : '?page=' ~ (page + 1) }}">Suivant</a>
+                        </li>
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+{% endblock %}

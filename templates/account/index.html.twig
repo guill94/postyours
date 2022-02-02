@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte ({{app.user.firstname}}){% endblock %}
+
+{% block body %}
+<style>
+    .wrapper { margin: 2em 2em;  font: 18px/1.5 sans-serif; }
+    .wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="wrapper">
+    <h1 class="text-center">Mon compte</h1>
+    <p class="text-center">Bienvenue {{app.user.firstname}}</p>
+
+    
+
+
+ <div class="row mt-5">
+    <div class="col-xl-2">
+        <h3>Filtrer</h3>
+        {{form(formulaire)}}
+        <p class="mt-5 text-center"><a href="{{ path('account_password') }}">Modifier mon mot de passe</a></p>
+    </div>
+    <div class="col-xl-9">
+        <div class="row">
+            {% if images %}
+                {% for image in images %}
+                    <div class="col-md-3 mt-2">
+                    
+                            <div class="card mr-1" style="width:;">
+                                <a href="{{ path('home_image_show', {id: image.id}) }}">
+                                    <img class="card-img-top" width='200px' height='180px' src="/upload/images/{{image.imageName}}" alt="{{image.title}}">
+                                </a>
+                                
+                                <div class="card-body">
+                                    <h3><a href="{{ path('home_image_show', {id: image.id}) }}">{{image.title}}</a></h3>
+                                        <p>{{image.description | u.truncate(25, '...')}}</p>
+                                        <p>{{image.category.name}}</p>
+                                        <p><small>Posté {{image.createdAt | ago}}</small></p>
+                                        <a href="{{ path('edit_image', {id: image.id}) }}">Modifier</a><span> | </span>
+                                        <a href="#" onclick="event.preventDefault(); 
+                                        confirm('Êtes-vous certain de supprimer cette image ?') && document.getElementById('image_delete').submit();"
+                                        >
+                                            Supprimer
+                                        </a>
+
+                                        <form id="image_delete" action="{{ path('delete_image', {id: image.id}) }}" method="post">
+                                            <input type="hidden" name="csrf_token" value="{{ csrf_token('imageDelete') }}">
+                                            <input type="hidden" name="_method" value="DELETE">
+                                        </form>
+                                </div>
+                            </div>
+            
+                    </div>
+                {% endfor %}
+            {% else %}
+            <p class="text-center">Aucune image postée</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

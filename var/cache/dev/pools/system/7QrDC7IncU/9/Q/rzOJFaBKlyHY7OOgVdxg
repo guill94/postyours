@@ -1,0 +1,3 @@
+<?php //App%255CClasses%255Csearch%2524string
+
+return [PHP_INT_MAX, []];

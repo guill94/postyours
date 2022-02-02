@@ -1,0 +1,83 @@
+<?php //89c0d09a85b3dd4388b7502a64be35a0
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT i0_.id AS id_0, i0_.title AS title_1, i0_.description AS description_2, i0_.created_at AS created_at_3, i0_.updated_at AS updated_at_4, i0_.image_name AS image_name_5, i0_.category_id AS category_id_6, i0_.user_id AS user_id_7 FROM images i0_ ORDER BY i0_.updated_at DESC LIMIT 8',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'i' => 'App\\Entity\\Images',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'title_1' => 'title',
+                    'description_2' => 'description',
+                    'created_at_3' => 'createdAt',
+                    'updated_at_4' => 'updatedAt',
+                    'image_name_5' => 'imageName',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'category_id_6' => 'integer',
+                    'user_id_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'i' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'category_id_6' => 'category_id',
+                    'user_id_7' => 'user_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'i',
+                    'title_1' => 'i',
+                    'description_2' => 'i',
+                    'created_at_3' => 'i',
+                    'updated_at_4' => 'i',
+                    'image_name_5' => 'i',
+                    'category_id_6' => 'i',
+                    'user_id_7' => 'i',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Images',
+                    'title_1' => 'App\\Entity\\Images',
+                    'description_2' => 'App\\Entity\\Images',
+                    'created_at_3' => 'App\\Entity\\Images',
+                    'updated_at_4' => 'App\\Entity\\Images',
+                    'image_name_5' => 'App\\Entity\\Images',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

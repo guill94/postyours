@@ -75,6 +75,6 @@ class __TwigTemplate_5867ba15046b5f47d1ee903e552fe7636fc577507094ddab78819048022
         return new Source("Bonjour, cliquer ci-dessous pour confirmer votre compte :
 <br>
 
-<a href=\"{{ url('confirm_account', {\"token\": token}) }}\">Cliquer ici pour confirmer votre compte</a>", "emails/signup.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\emails\\signup.html.twig");
+<a href=\"{{ url('confirm_account', {\"token\": token}) }}\">Cliquer ici pour confirmer votre compte</a>", "emails/signup.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\emails\\signup.html.twig");
     }
 }

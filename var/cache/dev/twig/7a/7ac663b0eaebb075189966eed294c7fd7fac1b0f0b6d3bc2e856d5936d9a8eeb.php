@@ -87,6 +87,6 @@ class __TwigTemplate_9a9b6ce4aaa974f9e9401fd98f0143c1feb7fe11a39a31f171e2b3854be
 {% else %}
     {{ field.formattedValue }}
 {% endif %}
-", "@EasyAdmin/crud/field/collection.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\collection.html.twig");
+", "@EasyAdmin/crud/field/collection.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\collection.html.twig");
     }
 }

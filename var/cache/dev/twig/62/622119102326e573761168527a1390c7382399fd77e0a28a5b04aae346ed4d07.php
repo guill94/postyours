@@ -133,6 +133,6 @@ class __TwigTemplate_19d93d02254261419a76b30fc401593fef4fed8c0cd571e982c3163eb87
     </div>
     <a href=\"{{ url('confirm_account', {\"token\": token}) }}\">ici</a>
 {% endblock %}
-", "register/index.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\register\\index.html.twig");
+", "register/index.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\register\\index.html.twig");
     }
 }

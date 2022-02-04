@@ -25,26 +25,22 @@ class ImageController extends AbstractController
         $image = new Images;
         $form = $this->createForm(ImageType::class, $image);
         
-
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid())
         {
-            if (null !== $image->getImageFile() && null !== $image->getTitle()) {
+            if (null !== $image->getImageFile()) {
                 $image->setUser($this->getUser());
                 $em -> persist($image);
                 $em -> flush();
 
                 $this->addFlash('success', 'Image postée avec succès');
                 return $this->redirectToRoute('home');
-            
             }
             else {
                 
-                $this->addFlash('danger', 'Veuillez choisir un titre et/ou une image');
+                $this->addFlash('danger', 'Veuillez choisir une image');
             }
-
-            
         }
 
         return $this->render('image/create.html.twig', [
@@ -57,7 +53,6 @@ class ImageController extends AbstractController
     #[Security("is_granted('ROLE_USERACTIVE') and image.getUser() == user")]
 
     public function edit(Request $request, EntityManagerInterface $em, Images $image)
-
     {
             $form = $this->createForm(ImageType::class, $image);
             
@@ -80,8 +75,6 @@ class ImageController extends AbstractController
                 'image' => $image, 
                 'formulaire' => $form->createView(),
             ]);
-
-        
     }
 
     #[Route('/image/{id<[0-9]+>}/supprimer', name: 'delete_image', methods: 'POST')]

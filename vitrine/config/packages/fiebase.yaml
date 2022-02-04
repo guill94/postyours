@@ -1,0 +1,8 @@
+kreait_firebase: 
+  projects:
+    my_project:
+      # Remove/Override the following line if running on GCE
+      credentials: '%kernel.project_dir%/config/privatekey.json'
+      database_uri: 'https://bsntest-16b9d-default-rtdb.europe-west1.firebasedatabase.app/'
+      verifier_cache: cache.app
+      

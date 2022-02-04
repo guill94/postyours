@@ -84,8 +84,6 @@ class HomeController extends AbstractController
             $comment->setUser($this->getUser());
             $comment->setImage($image);
             
-       
-
             $em -> persist($comment);
             $em -> flush();
             

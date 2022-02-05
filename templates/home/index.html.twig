@@ -31,7 +31,7 @@
                                         <p>{{image.description | u.truncate(25, '...')}}</p>
                                         <p><strong>Catégorie :</strong> {{image.category.name}}</p>
                                         <p>
-                                        <small>Postée {{image.updatedAt | ago}}</small></br>
+                                        <small>Postée {{image.createdAt | ago}}</small></br>
                                         
                                         {% if app.user == image.user %}
                                         <small>Par vous</small>

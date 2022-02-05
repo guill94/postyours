@@ -142,7 +142,7 @@ class __TwigTemplate_5382588283465e503e70ca73fab2996780a39e8d06ec8db1ea5bfae57d8
                                         <p>
                                         <small>Postée ";
             // line 34
-            echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, $context["image"], "updatedAt", [], "any", false, false, false, 34));
+            echo $this->extensions['Knp\Bundle\TimeBundle\Twig\Extension\TimeExtension']->diff(twig_get_attribute($this->env, $this->source, $context["image"], "createdAt", [], "any", false, false, false, 34));
             echo "</small></br>
                                         
                                         ";
@@ -291,7 +291,7 @@ class __TwigTemplate_5382588283465e503e70ca73fab2996780a39e8d06ec8db1ea5bfae57d8
                                         <p>{{image.description | u.truncate(25, '...')}}</p>
                                         <p><strong>Catégorie :</strong> {{image.category.name}}</p>
                                         <p>
-                                        <small>Postée {{image.updatedAt | ago}}</small></br>
+                                        <small>Postée {{image.createdAt | ago}}</small></br>
                                         
                                         {% if app.user == image.user %}
                                         <small>Par vous</small>
@@ -331,6 +331,6 @@ class __TwigTemplate_5382588283465e503e70ca73fab2996780a39e8d06ec8db1ea5bfae57d8
 
 
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\home\\index.html.twig");
     }
 }

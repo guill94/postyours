@@ -60,14 +60,14 @@ class ImageController extends AbstractController
 
             if ($form->isSubmitted() && $form->isValid()) {
 
-                if (null !== $image->getTitle()) {
+                if (null !== $image->getImageFile()) {
                 $em->flush();
 
                 $this->addFlash('success', 'Image modifiée avec succès');
                 return $this->redirectToRoute('account');
                 }
                 else {
-                    $this->addFlash('success', 'Veuillez remplir le champ titre et/ou image');
+                    $this->addFlash('success', 'Veuillez choisir une image');
                 }
             }
 

@@ -19,6 +19,9 @@ security:
             security: false
 
         main:
+            remember_me:
+                    secret:   '%kernel.secret%'
+                    lifetime: 302400
             pattern: ^/
             user_checker: App\Security\UserChecker
             lazy: true

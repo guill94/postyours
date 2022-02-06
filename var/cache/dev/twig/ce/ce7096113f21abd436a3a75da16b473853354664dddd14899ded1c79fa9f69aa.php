@@ -114,7 +114,7 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
         }
         // line 17
         echo "
-        <h1 class=\"h3 mb-3 font-weight-normal\">Veuillez vous connecter</h1>
+        <h1 class=\"text-center mb-3\">Connexion</h1>
         <label for=\"inputEmail\">Email :</label>
         <input type=\"email\" value=\"";
         // line 20
@@ -128,15 +128,18 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 
-        ";
-        // line 36
-        echo "
+            <div class=\"text-right checkbox mt-1 mb-3\">
+                <label>
+                    <input type=\"checkbox\" name=\"_remember_me\"> Se souvenir de moi !
+                </label>
+            </div>
+
         <button class=\"btn btn-block btn-primary mt-3\" type=\"submit\">
             Se connecter
         </button>
     </form>
     <p class=\"text-right\"><a href=\"";
-        // line 41
+        // line 36
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("pw_forgot");
         echo "\">Mot de passe oublié ?</a></p>
 </div>
@@ -161,7 +164,7 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
 
     public function getDebugInfo()
     {
-        return array (  140 => 41,  133 => 36,  128 => 24,  121 => 20,  116 => 17,  108 => 14,  105 => 13,  103 => 12,  100 => 11,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  143 => 36,  128 => 24,  121 => 20,  116 => 17,  108 => 14,  105 => 13,  103 => 12,  100 => 11,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -183,7 +186,7 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
             </div>
         {% endif %}
 
-        <h1 class=\"h3 mb-3 font-weight-normal\">Veuillez vous connecter</h1>
+        <h1 class=\"text-center mb-3\">Connexion</h1>
         <label for=\"inputEmail\">Email :</label>
         <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder='Votre email' required autofocus>
         <label for=\"inputPassword\" class='mt-2'>Mot de passe :</label>
@@ -191,16 +194,11 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
 
         <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
 
-        {#
-            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-            See https://symfony.com/doc/current/security/remember_me.html
-
-            <div class=\"checkbox mb-3\">
+            <div class=\"text-right checkbox mt-1 mb-3\">
                 <label>
-                    <input type=\"checkbox\" name=\"_remember_me\"> Remember me
+                    <input type=\"checkbox\" name=\"_remember_me\"> Se souvenir de moi !
                 </label>
             </div>
-        #}
 
         <button class=\"btn btn-block btn-primary mt-3\" type=\"submit\">
             Se connecter
@@ -209,6 +207,6 @@ class __TwigTemplate_b47a26007471c8d73965f6cc5be0fb2f8f912d40472bad7b24ccb36169d
     <p class=\"text-right\"><a href=\"{{ path('pw_forgot') }}\">Mot de passe oublié ?</a></p>
 </div>
 {% endblock %}
-", "security/login.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\security\\login.html.twig");
+", "security/login.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\security\\login.html.twig");
     }
 }

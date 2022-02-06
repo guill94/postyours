@@ -59,7 +59,7 @@ class AccountPasswordController extends AbstractController
     }
 
     /**
-     * @Route("/connexion/motdepasse/reinitialiser", name="pw_forgot")
+     * @Route("/connexion/mot-de-passe/reinitialiser", name="pw_forgot")
      */
     public function forgotPasswordEmail(Request $request, UserRepository $userRepo, MailerInterface $mailer)
     {
@@ -94,10 +94,10 @@ class AccountPasswordController extends AbstractController
     }
 
     /**
-     * @Route("/motdepasse/reinitialiser/{token}", name="reset_password")
+     * @Route("/mot-de-passe/reinitialiser/{token}", name="reset_password")
      * @param string $token
      */
-    public function PasswordReset(string $token, Request $request, UserRepository $userRepo, UserPasswordHasherInterface $hasher)
+    public function passwordReset(string $token, Request $request, UserRepository $userRepo, UserPasswordHasherInterface $hasher)
     {
         $user = $userRepo->findOneBy(["pw_token" => $token]);
 
@@ -108,13 +108,12 @@ class AccountPasswordController extends AbstractController
 
         if ($user) {
             if ($form->isSubmitted() && $form->isValid()) {
-                $user = $form->getData();
 
+                $user = $form->getData();
                 $password = $hasher->hashPassword($user, $user->getPassword());
                 $user->setPassword($password);
-                $this->entityManager->flush();
-
                 $user->setPwToken(null);
+                $this->entityManager->flush();
 
                 $this->addFlash("error", "Mot de passe réinitialisé avec succès");
                 $this->redirectToRoute('home');
@@ -125,7 +124,6 @@ class AccountPasswordController extends AbstractController
             return $this->redirectToRoute('home');
         }
         
-
         return $this->render('account/resetpassword.html.twig', [
             'formulaire' =>$form->createView(),
         ]);

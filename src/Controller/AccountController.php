@@ -18,7 +18,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AccountController extends AbstractController
 {
     #[Route('/compte', name: 'account')]
-    #[Security("is_granted('ROLE_USER')")]
+    #[Security("is_granted('ROLE_USERACTIVE')")]
     public function index(ImagesRepository $imagesRepo, Request $request): Response
     {
         

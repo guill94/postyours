@@ -92,11 +92,7 @@ class __TwigTemplate_19d93d02254261419a76b30fc401593fef4fed8c0cd571e982c3163eb87
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 8, $this->source); })()), 'form');
         echo "
     </div>
-    <a href=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("confirm_account", ["token" => (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 10, $this->source); })())]), "html", null, true);
-        echo "\">ici</a>
-";
+    ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -117,7 +113,7 @@ class __TwigTemplate_19d93d02254261419a76b30fc401593fef4fed8c0cd571e982c3163eb87
 
     public function getDebugInfo()
     {
-        return array (  97 => 10,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -131,8 +127,8 @@ class __TwigTemplate_19d93d02254261419a76b30fc401593fef4fed8c0cd571e982c3163eb87
         <h1 class='text-center'>Inscription</h1>
         {{ form (formulaire) }}
     </div>
-    <a href=\"{{ url('confirm_account', {\"token\": token}) }}\">ici</a>
+    {#<a href=\"{{ url('confirm_account', {\"token\": token}) }}\">ici</a>#}
 {% endblock %}
-", "register/index.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\register\\index.html.twig");
+", "register/index.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\register\\index.html.twig");
     }
 }

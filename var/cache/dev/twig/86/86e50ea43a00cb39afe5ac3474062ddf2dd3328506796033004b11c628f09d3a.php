@@ -91,9 +91,10 @@ class __TwigTemplate_379daeb54692fc8a438f277d9802f210842b4795b59092c2642f4851082
 </style>
 
 <div class=\"example-wrapper\">
+    <h1 class='text-center mt-5 mb-4'>Poster une nouvelle image</h1>
     ";
-        // line 12
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 12, $this->source); })()), 'form');
+        // line 13
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 13, $this->source); })()), 'form');
         echo "
     
 </div>
@@ -118,7 +119,7 @@ class __TwigTemplate_379daeb54692fc8a438f277d9802f210842b4795b59092c2642f4851082
 
     public function getDebugInfo()
     {
-        return array (  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -134,10 +135,11 @@ class __TwigTemplate_379daeb54692fc8a438f277d9802f210842b4795b59092c2642f4851082
 </style>
 
 <div class=\"example-wrapper\">
+    <h1 class='text-center mt-5 mb-4'>Poster une nouvelle image</h1>
     {{ form(formulaire)}}
     
 </div>
 {% endblock %}
-", "image/create.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\image\\create.html.twig");
+", "image/create.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\image\\create.html.twig");
     }
 }

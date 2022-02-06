@@ -91,7 +91,7 @@ class __TwigTemplate_d700331091956a2939af3b528f69c1ddbd18209ab376debfe4ad557b800
 </style>
 
 <div class=\"wrapper\">
-    <h1>Modifier mon mot de passe</h1>
+    <h1 class=\"text-center mt-5 mb-4\">Modifier mon mot de passe</h1>
 
     ";
         // line 14
@@ -139,12 +139,12 @@ class __TwigTemplate_d700331091956a2939af3b528f69c1ddbd18209ab376debfe4ad557b800
 </style>
 
 <div class=\"wrapper\">
-    <h1>Modifier mon mot de passe</h1>
+    <h1 class=\"text-center mt-5 mb-4\">Modifier mon mot de passe</h1>
 
     {{ form(formulaire) }}
     <a class=\"mt-5\" href=\"{{ path('account') }}\">Retour à mon compte</a>
 </div>
 {% endblock %}
-", "account/changepassword.html.twig", "C:\\Users\\Guillaume Burgnies\\Desktop\\postyours\\templates\\account\\changepassword.html.twig");
+", "account/changepassword.html.twig", "C:\\Users\\guill\\Desktop\\picshare2\\templates\\account\\changepassword.html.twig");
     }
 }

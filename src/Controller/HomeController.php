@@ -10,12 +10,11 @@ use App\Form\SearchType;
 use App\Repository\CommentRepository;
 use App\Repository\ImagesRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Mapping\Id;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+
 
 class HomeController extends AbstractController
 {
@@ -24,13 +23,13 @@ class HomeController extends AbstractController
 
     public function index(ImagesRepository $imagesRepo, Request $request) : Response
     {
-        //$images = $imagesRepo->findBy([], ['createdAt' => 'DESC']);
-        $page = (int) $request->query->get('page', 1);
+        $images = $imagesRepo->findBy([], ['createdAt' => 'DESC']);
+        /*$page = (int) $request->query->get('page', 1);
         $limit = 8;
         $pagination = true;
         $images = $imagesRepo->getPages($page, $limit);
 
-        $total = $imagesRepo->getTotalImages();
+        $total = $imagesRepo->getTotalImages();*/
 
         $search = new search();
         $form = $this->createForm(SearchType::class, $search);
@@ -38,18 +37,18 @@ class HomeController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $pagination = false;
+            //$pagination = false;
             $search = $form->getData();
  
-            if ($search->categories === [] && $search->string === null) {
+            /*if ($search->categories === [] && $search->string === null) {
                 $pagination = true;
                 $images = $imagesRepo->getPages($page, $limit);
 
                 $total = $imagesRepo->getTotalImages();
-            }
-            else {
+            }*/
+            /*else {*/
                 $images = $imagesRepo->findWithCat($search);
-            }
+            //}
             
         }
 
@@ -57,10 +56,11 @@ class HomeController extends AbstractController
         return $this->render('home/index.html.twig', [
             'images' => $images,
             'formulaire' => $form->createView(),
-            'total' => $total,
-            'page' => $page,
-            'limit' => $limit,
-            'pagination' => $pagination,
+            //'total' => $total,
+            //'page' => $page,
+            //'limit' => $limit,
+            //'pagination' => $pagination,
+            'pagination' => false
         ]);
     }
 

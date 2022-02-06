@@ -15,7 +15,7 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/compte' => [[['_route' => 'account', '_controller' => 'App\\Controller\\AccountController::index'], null, null, null, false, false, null]],
         '/compte/modifier_motdepasse' => [[['_route' => 'account_password', '_controller' => 'App\\Controller\\AccountPasswordController::index'], null, null, null, false, false, null]],
-        '/connexion/motdepasse/reinitialiser' => [[['_route' => 'pw_forgot', '_controller' => 'App\\Controller\\AccountPasswordController::forgotPasswordEmail'], null, null, null, false, false, null]],
+        '/connexion/mot-de-passe/reinitialiser' => [[['_route' => 'pw_forgot', '_controller' => 'App\\Controller\\AccountPasswordController::forgotPasswordEmail'], null, null, null, false, false, null]],
         '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\Admin\\DashboardController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/nouvelle/image' => [[['_route' => 'create_image', '_controller' => 'App\\Controller\\ImageController::index'], null, null, null, false, false, null]],
@@ -45,16 +45,16 @@ return [
                     .'|nfirmer/([^/]++)(*:219)'
                 .')'
                 .'|/m(?'
-                    .'|otdepasse/reinitialiser/([^/]++)(*:265)'
+                    .'|ot\\-de\\-passe/reinitialiser/([^/]++)(*:269)'
                     .'|edia/cache/resolve/(?'
-                        .'|([A-z0-9_-]*)/rc/([^/]++)/(.+)(*:325)'
-                        .'|([A-z0-9_-]*)/(.+)(*:351)'
+                        .'|([A-z0-9_-]*)/rc/([^/]++)/(.+)(*:329)'
+                        .'|([A-z0-9_-]*)/(.+)(*:355)'
                     .')'
                 .')'
                 .'|/image/(?'
-                    .'|([0-9]+)(*:379)'
-                    .'|([0-9]+)/modifier(*:404)'
-                    .'|([0-9]+)/supprimer(*:430)'
+                    .'|([0-9]+)(*:383)'
+                    .'|([0-9]+)/modifier(*:408)'
+                    .'|([0-9]+)/supprimer(*:434)'
                 .')'
             .')/?$}sDu',
     ],
@@ -68,12 +68,12 @@ return [
         159 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
         195 => [[['_route' => 'delete_comment', '_controller' => 'App\\Controller\\AccountController::deleteComment'], ['id'], null, null, false, false, null]],
         219 => [[['_route' => 'confirm_account', '_controller' => 'App\\Controller\\RegisterController::confirmAccount'], ['token'], null, null, false, true, null]],
-        265 => [[['_route' => 'reset_password', '_controller' => 'App\\Controller\\AccountPasswordController::PasswordReset'], ['token'], null, null, false, true, null]],
-        325 => [[['_route' => 'liip_imagine_filter_runtime', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterRuntimeAction'], ['filter', 'hash', 'path'], ['GET' => 0], null, false, true, null]],
-        351 => [[['_route' => 'liip_imagine_filter', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterAction'], ['filter', 'path'], ['GET' => 0], null, false, true, null]],
-        379 => [[['_route' => 'home_image_show', '_controller' => 'App\\Controller\\HomeController::show'], ['id'], null, null, false, true, null]],
-        404 => [[['_route' => 'edit_image', '_controller' => 'App\\Controller\\ImageController::edit'], ['id'], null, null, false, false, null]],
-        430 => [
+        269 => [[['_route' => 'reset_password', '_controller' => 'App\\Controller\\AccountPasswordController::passwordReset'], ['token'], null, null, false, true, null]],
+        329 => [[['_route' => 'liip_imagine_filter_runtime', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterRuntimeAction'], ['filter', 'hash', 'path'], ['GET' => 0], null, false, true, null]],
+        355 => [[['_route' => 'liip_imagine_filter', '_controller' => 'Liip\\ImagineBundle\\Controller\\ImagineController::filterAction'], ['filter', 'path'], ['GET' => 0], null, false, true, null]],
+        383 => [[['_route' => 'home_image_show', '_controller' => 'App\\Controller\\HomeController::show'], ['id'], null, null, false, true, null]],
+        408 => [[['_route' => 'edit_image', '_controller' => 'App\\Controller\\ImageController::edit'], ['id'], null, null, false, false, null]],
+        434 => [
             [['_route' => 'delete_image', '_controller' => 'App\\Controller\\ImageController::delete'], ['id'], ['POST' => 0], null, false, false, null],
             [null, null, null, null, false, false, 0],
         ],

@@ -8029,14 +8029,14 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.DWqti_L" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.gRy.3Ub" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AccountController::deleteComment" type="service_closure" id=".service_locator.0i7f3ft"/>
         <argument key="App\Controller\AccountController::index" type="service_closure" id=".service_locator.BL8pHVq"/>
-        <argument key="App\Controller\AccountPasswordController::PasswordReset" type="service_closure" id=".service_locator.GtISqB2"/>
         <argument key="App\Controller\AccountPasswordController::forgotPasswordEmail" type="service_closure" id=".service_locator.txL2_DT"/>
         <argument key="App\Controller\AccountPasswordController::index" type="service_closure" id=".service_locator.uzf8IEO"/>
+        <argument key="App\Controller\AccountPasswordController::passwordReset" type="service_closure" id=".service_locator.GtISqB2"/>
         <argument key="App\Controller\Admin\CategoryCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\CategoryCrudController::batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
         <argument key="App\Controller\Admin\CategoryCrudController::configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
@@ -8138,9 +8138,9 @@
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
         <argument key="App\Controller\AccountController:deleteComment" type="service_closure" id=".service_locator.0i7f3ft"/>
         <argument key="App\Controller\AccountController:index" type="service_closure" id=".service_locator.BL8pHVq"/>
-        <argument key="App\Controller\AccountPasswordController:PasswordReset" type="service_closure" id=".service_locator.GtISqB2"/>
         <argument key="App\Controller\AccountPasswordController:forgotPasswordEmail" type="service_closure" id=".service_locator.txL2_DT"/>
         <argument key="App\Controller\AccountPasswordController:index" type="service_closure" id=".service_locator.uzf8IEO"/>
+        <argument key="App\Controller\AccountPasswordController:passwordReset" type="service_closure" id=".service_locator.GtISqB2"/>
         <argument key="App\Controller\Admin\CategoryCrudController:autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\CategoryCrudController:batchDelete" type="service_closure" id=".service_locator.Olybskb"/>
         <argument key="App\Controller\Admin\CategoryCrudController:configureActions" type="service_closure" id=".service_locator.CKlWSja"/>
@@ -8920,12 +8920,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.DWqti_L"/>
+      <argument type="service" id=".service_locator.gRy.3Ub"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.DWqti_L"/>
+      <argument type="service" id=".service_locator.gRy.3Ub"/>
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface">
       <argument type="collection"/>
@@ -9887,7 +9887,7 @@
     <service id="Knp\Bundle\TimeBundle\DateTimeFormatter" alias="time.datetime_formatter"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.DWqti_L"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.gRy.3Ub"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -9916,7 +9916,7 @@
     <service id=".service_locator.rAlqQ78" alias=".service_locator.3on9uHL"/>
     <service id=".service_locator.tbo4Jjv" alias=".service_locator.bgO__Zr"/>
     <service id=".service_locator.JUL5.dd" alias=".service_locator.A.uumVl"/>
-    <service id=".service_locator.V8FYkRv" alias=".service_locator.DWqti_L"/>
+    <service id=".service_locator.AU9J6Sd" alias=".service_locator.gRy.3Ub"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.7S8407B" alias=".service_locator.5qnCLAq"/>
     <service id=".service_locator.6_zDKLR" alias=".service_locator.QIlxssL"/>
